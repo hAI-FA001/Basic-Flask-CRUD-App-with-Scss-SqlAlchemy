@@ -8,3 +8,5 @@
 - Templating (Jinja)
   - Linking static files with their URLs
   - HTML Template Inheritance
+- SQLAlchemy
+  - Configure it in Flask app

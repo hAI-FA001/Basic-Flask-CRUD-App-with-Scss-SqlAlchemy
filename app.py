@@ -7,7 +7,7 @@ app = Flask(__name__)
 Scss(app)
 
 
-
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite://database.db"
 
 
 @app.route("/")
