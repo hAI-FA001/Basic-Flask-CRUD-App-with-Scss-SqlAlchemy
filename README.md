@@ -10,3 +10,4 @@
   - HTML Template Inheritance
 - SQLAlchemy
   - Configure it in Flask app
+  - Models
