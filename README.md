@@ -27,3 +27,4 @@
   - Update
   - Commit
   - Queries
+- Deployment

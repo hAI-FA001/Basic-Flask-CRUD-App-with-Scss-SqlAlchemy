@@ -9,6 +9,7 @@ Scss(app)
 
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"  # triple / means relative path
+app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False  # so it won't try and save the DB every single time
 db = SQLAlchemy(app)
 
 class MyTask(db.Model):
@@ -19,6 +20,9 @@ class MyTask(db.Model):
 
     def __repr__(self):
         return f"Task {self.id}"
+
+with app.app_context():  # move this up so it creates DB as soon as it runs
+        db.create_all()
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -69,7 +73,4 @@ def edit(id: int):
 
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
-
     app.run(debug=True)
