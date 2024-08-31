@@ -3,6 +3,8 @@
 - Flask
   - Routes
   - Rendering templates
+  - Get form data
+  - Redirect (PRG pattern)
 - Scss
   - VS Code's Live Sass Compiler extension
 - Templating (Jinja)
@@ -12,3 +14,5 @@
   - Configure it in Flask app
   - Models
   - Create .db w/ context manager
+  - Add
+  - Commit
