@@ -1,3 +1,7 @@
+# Basic Flask Web App
+
+<a href="https://www.youtube.com/watch?v=45P3xQPaYxc">Tutorial followed</a>
+
 ### Things Covered
 
 - Flask
@@ -28,3 +32,13 @@
   - Commit
   - Queries
 - Deployment
+  - on <a href="https://haiba.pythonanywhere.com/">pythonanywhere</a>
+  - Set up server
+    - Create virtual env
+    - Install libraries
+    - Clone the repo from GitHub
+    - Pull the updates from GitHub
+  - Set up pythonanywhere Web App
+    - Configure source code path
+    - Configure virtual env path
+  - Set up WSGI configuration file
