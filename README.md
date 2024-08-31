@@ -3,7 +3,7 @@
 - Flask
   - Routes
   - Rendering templates
-  - Get form data
+  - Get and use form data
   - Redirect (PRG pattern)
   - Sending data to HTML template
 - Scss
@@ -11,6 +11,9 @@
 - Templating (Jinja)
   - Linking static files with their URLs
   - HTML Template Inheritance
+  - Use data passed from Flask to template
+  - Send data from template to Flask
+  - use loops and conditions in template
 - SQLAlchemy
   - Configure it in Flask app
   - Models

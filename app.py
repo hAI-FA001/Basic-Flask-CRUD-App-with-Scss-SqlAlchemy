@@ -32,7 +32,7 @@ def index():
             db.session.add(new_task)
             db.session.commit()
             # return the homepage
-            redirect("/")
+            return redirect("/")
         except Exception as e:
             print(f"Error: {e}")
             return f"Error: {e}"
