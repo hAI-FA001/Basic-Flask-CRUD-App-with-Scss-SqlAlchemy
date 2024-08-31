@@ -4,6 +4,10 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
+Scss(app)
+
+
+
 
 
 @app.route("/")
