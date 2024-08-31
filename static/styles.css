@@ -53,11 +53,11 @@ body {
   border: solid 1px;
   border-radius: 5px;
 }
-.content #btn_add {
+.content input[type=submit] {
   background-color: #28a745;
   color: #fff;
   cursor: pointer;
 }
-.content #btn_add:hover {
+.content input[type=submit]:hover {
   background-color: #218838;
 }/*# sourceMappingURL=styles.css.map */

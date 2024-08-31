@@ -78,7 +78,7 @@ body {
     border-radius: 5px;
   }
 
-  #btn_add {
+  input[type="submit"] {
     background-color: $success-color;
     color: #fff;
 
