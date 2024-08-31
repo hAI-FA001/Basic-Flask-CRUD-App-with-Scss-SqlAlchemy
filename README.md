@@ -11,3 +11,4 @@
 - SQLAlchemy
   - Configure it in Flask app
   - Models
+  - Create .db w/ context manager
