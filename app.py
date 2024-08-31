@@ -41,6 +41,18 @@ def index():
         tasks = MyTask.query.order_by(MyTask.created).all()
         return render_template("index.html", tasks=tasks)
 
+@app.route("/delete/<int:id>")
+def delete(id: int):
+    # won't get 404 cuz this route is only reached if Task is present
+    del_task = MyTask.query.get_or_404(id)
+    try:
+        db.session.delete(del_task)
+        db.session.commit()
+        return redirect("/")
+    except Exception as e:
+        print(f"Error {e}")
+        return f"Error {e}"
+
 
 if __name__ == "__main__":
     with app.app_context():

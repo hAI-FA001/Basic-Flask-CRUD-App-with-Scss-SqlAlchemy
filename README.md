@@ -6,6 +6,7 @@
   - Get and use form data
   - Redirect (PRG pattern)
   - Sending data to HTML template
+  - Route parameters
 - Scss
   - VS Code's Live Sass Compiler extension
 - Templating (Jinja)
@@ -13,11 +14,12 @@
   - HTML Template Inheritance
   - Use data passed from Flask to template
   - Send data from template to Flask
-  - use loops and conditions in template
+  - Use loops and conditions in template
 - SQLAlchemy
   - Configure it in Flask app
   - Models
   - Create .db w/ context manager
   - Add
+  - Delete
   - Commit
   - Queries
