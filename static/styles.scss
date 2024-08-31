@@ -1,10 +1,18 @@
 // color vars
-$primary-color: #007bff;
+$primary-color: #777bff;
 $primary-hover-color: #0056b3;
-$success-color: #28a745;
-$success-hover-color: #218838;
-$title-color: #333;
-$bg-color: wheat;
+$success-color: #28a7a7;
+$success-hover-color: #218888;
+$title-color: #315;
+$bg-color: #331199;
+
+$box-color: #aaf;
+$header-color: #fef;
+$header-border-color: #447;
+$header-background-color: #008;
+$btn-color: #fff;
+$data-color: #000;
+$data-background-color: #ccf;
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -21,14 +29,14 @@ body {
   margin: 50px auto;
   padding: 20px;
 
-  background-color: #fff;
+  background-color: $box-color;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   text-align: center;
 
   h1 {
-    color: $primary-hover-color;
+    color: $title-color;
   }
 
   h4 {
@@ -40,17 +48,20 @@ body {
 
     margin-top: 20px;
     border-collapse: collapse;
-  }
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid $header-border-color;
+    }
 
-  th,
-  td {
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-
-  th {
-    background-color: #f0f0f0;
-    color: #333;
+    td {
+      background-color: $data-background-color;
+      color: $data-color;
+    }
+    th {
+      background-color: $header-background-color;
+      color: $header-color;
+    }
   }
 
   a {
@@ -61,7 +72,7 @@ body {
 
     border-radius: 20px;
     background-color: $primary-color;
-    color: #fff;
+    color: $btn-color;
     text-decoration: none;
     transition: background-color 0.3s ease;
 
@@ -80,9 +91,11 @@ body {
 
   input[type="submit"] {
     background-color: $success-color;
-    color: #fff;
+    color: $btn-color;
+    border: none;
 
     cursor: pointer;
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: $success-hover-color;

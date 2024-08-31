@@ -2,20 +2,20 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0px;
   padding: 0px;
-  background-color: wheat;
+  background-color: #331199;
 }
 
 .content {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: #aaf;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .content h1 {
-  color: #0056b3;
+  color: #315;
 }
 .content h4 {
   color: #666;
@@ -25,21 +25,25 @@ body {
   margin-top: 20px;
   border-collapse: collapse;
 }
-.content th,
-.content td {
+.content table th,
+.content table td {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #447;
 }
-.content th {
-  background-color: #f0f0f0;
-  color: #333;
+.content table td {
+  background-color: #ccf;
+  color: #000;
+}
+.content table th {
+  background-color: #008;
+  color: #fef;
 }
 .content a {
   display: inline-block;
   padding: 8px 16px;
   margin: 5px;
   border-radius: 20px;
-  background-color: #007bff;
+  background-color: #777bff;
   color: #fff;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -54,10 +58,12 @@ body {
   border-radius: 5px;
 }
 .content input[type=submit] {
-  background-color: #28a745;
+  background-color: #28a7a7;
   color: #fff;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .content input[type=submit]:hover {
-  background-color: #218838;
+  background-color: #218888;
 }/*# sourceMappingURL=styles.css.map */
