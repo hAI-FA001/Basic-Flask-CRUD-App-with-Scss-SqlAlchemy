@@ -36,9 +36,10 @@ def index():
         except Exception as e:
             print(f"Error: {e}")
             return f"Error: {e}"
-
-
-    return render_template("index.html")
+    # See Tasks
+    else:
+        tasks = MyTask.query.order_by(MyTask.created).all()
+        return render_template("index.html", tasks=tasks)
 
 
 if __name__ == "__main__":

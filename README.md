@@ -5,6 +5,7 @@
   - Rendering templates
   - Get form data
   - Redirect (PRG pattern)
+  - Sending data to HTML template
 - Scss
   - VS Code's Live Sass Compiler extension
 - Templating (Jinja)
@@ -16,3 +17,4 @@
   - Create .db w/ context manager
   - Add
   - Commit
+  - Queries
