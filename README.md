@@ -21,5 +21,6 @@
   - Create .db w/ context manager
   - Add
   - Delete
+  - Update
   - Commit
   - Queries

@@ -53,6 +53,18 @@ def delete(id: int):
         print(f"Error {e}")
         return f"Error {e}"
 
+@app.route("/edit/<int:id>")
+def edit(id: int):
+    task = MyTask.query.get_or_404(id)
+    if request.method == "POST":
+        task.content = request.form['content']
+        try:
+            db.session.commit()
+            return redirect("/")
+        except Exception as e:
+            print(f"Error {e}")
+            return f"Error {e}"
+
 
 if __name__ == "__main__":
     with app.app_context():
