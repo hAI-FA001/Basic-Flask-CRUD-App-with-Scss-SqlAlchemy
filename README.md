@@ -9,6 +9,9 @@
   - Route parameters
 - Scss
   - VS Code's Live Sass Compiler extension
+  - Variables
+  - Nesting
+  - States (hover)
 - Templating (Jinja)
   - Linking static files with their URLs
   - HTML Template Inheritance
